@@ -24,29 +24,50 @@ class Main {
 
 class Indeses{
 	
-	public void calculate_combinations(int[] arrxy, int target)
+	public void calculate_combinations(int[] arrxy, int target){
 	
-	{
-		for( int i = 0; i < arrxy.length; i++) {
+		for(int a= 0; a < arrxy.length; a++) {
+			if (arrxy[a] == target) {
+				
+				
+				System.out.print(arrxy[a] );
+		}
 			
-			for (int j = 0; j <arrxy.length; j++) {
+			
+		}
+	
+		
+	
+			for(int j = 0; j < arrxy.length; j++) {
+			
+				for (int h = 0; h < arrxy.length; h++) {
 			
 				
-					if (i == j) {
+						if (j == h) {
 					
-					continue; }
-				
-				
-					else if (arrxy[i] + arrxy[j] == target) {
+							continue; }
 					
-						System.out.print(arrxy[i] + " and ");
-						System.out.print(arrxy[j]);
-						System.out.print("\r\n");
+						
+				
+							
+						
+							else if (arrxy[j] + arrxy[h] == target) {
+						
+						
+								System.out.print(arrxy[j] + " AND ");
+								System.out.print(arrxy[h]);
+								System.out.print("\r\n");
+					}
+						
+						
 					}
 				}
-				}
-			}
+			
 		}
+		
+}
+
+		
 	
 	
 	
